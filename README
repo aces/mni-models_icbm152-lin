@@ -1,0 +1,22 @@
+		     ICBM Average Brain (ICBM152)
+		    Stereotaxic Registration Model
+
+TESTING included with MNI AutoReg for instructions on doing this.
+
+Any problems with this package should be reported to 
+Andrew Janke <rotor@bic.mni.mcgill.ca> or
+Steve Robbins <stever@bic.mni.mcgill.ca> or
+Louis Collins <louis@bic.mni.mcgill.ca>.
+
+
+
+
+ References:
+
+   Mazziotta, J.C., Toga, A.W., Evans, A., Fox, P., and Lancaster, J. (1995). 
+     A probabilistic atlas of the human brain: Theory and rationale for its 
+     development. The international consortium for brain mapping. NeuroImage 2(2), 
+     pp. 89–101. http://www.ncbi.nlm.nih.gov/pubmed/9343592
+   Talairach, J. and Tournoux, P. (1988). Co-Planar Stereotaxic Atlas of the 
+     Human Brain, 3-Dimensional Proportional System: An Approach to Cerebral 
+     Imaging (New York: Thieme). 
