@@ -4,8 +4,8 @@
 %packager Andrew Janke <rotor@bic.mni.mcgill.ca>
 %license COPYING
 %readme README
-%description mni_autoreg models (average_305)
+%description mni-models linear icbm152 T1, T2 and PD
 %version @VERSION@
 %requires netcdf
 %requires minc
-%requires mni_autoreg
+%requires mni-autoreg
