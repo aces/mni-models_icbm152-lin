@@ -1,6 +1,55 @@
 		     ICBM Average Brain (ICBM152)
 		    Stereotaxic Registration Model
 
+This is a version of the ICBM Average Brain - an average of 152
+T1-weighted MRI scans, linearly transformed to Talairach space - that
+is specially adapted for use with the MNI Linear Registration Package
+(mni_autoreg).
+
+Please note that this volume here is different from the mni305 model
+(average_305) that was originally (back in ancient times) included
+with mni_autoreg.
+
+ Included in this package are the following files:
+
+     Makefile
+	makefile to do everything for you (see instructions below)
+     icbm_avg_152_t1_tal_lin.mnc 
+	a version of the average MRI that covers the whole brain
+        (unlike the original Talairach atlas), sampled with 1mm cubic
+        voxels
+     icbm_avg_152_t1_tal_lin.mnc 
+	a mask of the average brain in icbm_avg_152_t1_tal_lin.mnc,
+	semi-automatically created by Dr. Louis Collins.  Note that
+	this mask has had holes filled in, so it is a connected volume
+	but includes non-brain tissue (eg. the CSF in the ventricles)
+     icbm_avg_152_t1_tal_lin.mnc 
+	another mask, required for nonlinear mode
+
+
+Here's a brief summary of what you need to do:
+
+1) Build and install the entire MNI AutoReg package, as described in
+   the README with that package.  (Note that this may entail building
+   netCDF, MINC, and Perl 5 in addition to the programs included with
+   the MNI AutoReg package.)  You *can* perform the "make check" step
+   before building and installing the stereotaxic model, but you won't
+   be able to do any real registrations with mritotal until the model
+   is installed.
+2) Install the model:
+     * edit Makefile; make sure that prefix used here is the same as the
+       prefix used to install MNI AutoReg
+     * type "make install"
+3) References:
+   Mazziotta, J.C., Toga, A.W., Evans, A., Fox, P., and Lancaster, J. (1995). 
+     A probabilistic atlas of the human brain: Theory and rationale for its 
+     development. The international consortium for brain mapping. NeuroImage 2(2), 
+     pp. 89–101. http://www.ncbi.nlm.nih.gov/pubmed/9343592
+   Talairach, J. and Tournoux, P. (1988). Co-Planar Stereotaxic Atlas of the 
+     Human Brain, 3-Dimensional Proportional System: An Approach to Cerebral 
+     Imaging (New York: Thieme). 
+
+Now, you're ready to try out mritotal on real data.  See the file
 TESTING included with MNI AutoReg for instructions on doing this.
 
 Any problems with this package should be reported to 
