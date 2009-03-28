@@ -1,11 +1,10 @@
 %product mni-models_icbm152-lin
-%copyright 2000-2004 Louis Collins
+%copyright 2000-2009 Louis Collins
 %vendor McConnell Brain Imaging Centre
-%packager Andrew Janke <rotor@bic.mni.mcgill.ca>
+%packager Andrew Janke <a.janke@gmail.com>
 %license COPYING
 %readme README
 %description mni-models linear icbm152 T1, T2 and PD
 %version @VERSION@
-%requires netcdf
 %requires minc
 %requires mni-autoreg

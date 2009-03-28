@@ -1,8 +1,12 @@
+
+2009-03-28  Andrew L Janke  <a.janke@gmail.com>
+
+ * Makefile.am: changed install dir from mni_autoreg to mni-models
+
 2004-11-23  Andrew Janke  <rotor@bic.mni.mcgill.ca>
 
-    * Added date-stamping to Makefile.am
-
+ * Added date-stamping to Makefile.am
 
 2004-11-22  Andrew Janke  <rotor@bic.mni.mcgill.ca>
 
-    * Initial release/creation
+ * Initial release/creation
