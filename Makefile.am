@@ -19,13 +19,15 @@ DATE_STAMP := `date +%D-%T`
 noinst_DATA := \
 	$(MODELS:=.mnc.gz) \
 	$(MODEL_BASE)_$(PRIM_MODAL)_mask.mnc.gz \
-	$(MODEL_BASE)_$(PRIM_MODAL)_headmask.mnc.gz
+	$(MODEL_BASE)_$(PRIM_MODAL)_headmask.mnc.gz \
+	Cerebellum_Ventricles_SubCortical_Mask-lin.mnc.gz
 
 # installed data data
 pkgdata_DATA := \
 	$(MODELS:=.mnc) \
 	$(MODELS:=_mask.mnc) \
-	$(MODELS:=_headmask.mnc)
+	$(MODELS:=_headmask.mnc) \
+	Cerebellum_Ventricles_SubCortical_Mask-lin.mnc
 
 EXTRA_DIST = $(noinst_DATA) $(m4_files) \
 	epm-header.in

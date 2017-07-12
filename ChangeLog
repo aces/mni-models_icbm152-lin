@@ -2,6 +2,7 @@
 
 * trimmed down installation (no more blurred files and .gz files)
 * converted .mnc files to minc2 format
+* added Cerebellum_Ventricles_SubCortical_Mask for CIVET
 
 2009-03-28  Andrew L Janke  <a.janke@gmail.com>
 
