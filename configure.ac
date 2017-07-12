@@ -16,7 +16,7 @@ AC_PROG_INSTALL
 AC_PROG_GZIP
 
 # check for make_model
-AC_PROG_MAKE_MODEL
+# AC_PROG_MAKE_MODEL
 
 # Finish up by writing output files.
 AC_CONFIG_FILES([Makefile])
